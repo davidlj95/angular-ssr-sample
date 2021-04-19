@@ -1,8 +1,8 @@
 # example netlify.toml
 [build]
-  command = "ng build --prod"
+  command = "npm run prerender"
   functions = "netlify/functions"
-  publish = "dist/angular-ssr-sample"
+  publish = "dist/angular-ssr-sample/browser"
 
   [[redirects]]
     from = "/*"
